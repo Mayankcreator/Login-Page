@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    /* height: 100vh; */
+    
+}
+#logo{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+#logo img{
+    height: 75px;
+    width: 100px;
+    padding: 2px 6px;
+}
+.section{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    position: relative;
+    margin: 0 auto;
+    height: 460px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px rgba(187, 187, 187, 0.577);
+    /* box-sizing: border-box; */
+}
+section p{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+
+} 
+section p::after{
+    content: "Create Something New";
+    font-size: 14px;
+    font-family: poppins;
+    position: relative;
+    font-weight: 400;
+    top: 25px;
+    right: 111px;
+}
+.sign{
+    /* div of input */
+    border: 1px solid black;
+    border-radius: 6px;
+    width: auto;
+    height: 50px;
+    
+    /* padding: 10px 10px; */
+}
+#sign{
+    /* div of email */
+    margin: 45px 0 25px;
+}
+.text{
+    /* input tag*/
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    position: relative;
+    top: 45%;
+    right: -3%;
+    width: 97%;
+    height: 50%;
+    
+
+}  
+.sign label{
+    pointer-events: none;
+    color: gray;
+    transition: all .35s ease;
+}
+/* .sign input:focus ~ label{
+    top: -5px;
+    color: blue;
+}
+.sign input:valid label{
+    top: -5px;
+} */
+#sign label{
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    
+}
+#pass label{
+    position: absolute;
+    left: 9%;
+    top: 40.6%;
+}
+.sign input:focus~label{
+    transform: translate(2px, -9px);
+    font-size: 14px;
+    color: black;
+    
+    
+}
+.sign input:valid~label{
+    transform: translate(2px, -9px);
+    font-size: 14px;
+    color: black;
+}
+
+
+.link{
+    margin-top: 15px;
+    border-radius: 15px;
+    width: 160px;
+    /* height: 40px; */
+    /* padding-right: 2px; */
+    /* border: 2px solid black; */
+}
+.link a{
+    text-decoration: none;
+    color: #0073b1;
+    letter-spacing: -.4px;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0 4px;
+}
+.link a:hover{
+    background-color: #389bfe64;
+    border-radius: 15px;
+    text-decoration: underline;
+}
+#submit{
+    background-color: #0073b1;
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    color: white;
+    margin: 17px 0;
+
+}
+#submit:hover{
+    background-color: #0086ce;
+}
+#google, #apple{
+    border: none;
+    background-color:  transparent;
+}
+.button{
+    width: 100%;
+    border: 1px solid;
+    height: 45px;
+    border-radius: 40px;
+}
+#btn-google{
+    margin: 17px 0;
+}
+
+
+#btn-google:hover{
+    background-color: rgba(134, 231, 255, 0.117);
+    /* box-shadow: inset 1px 1px 4px rgba(134, 231, 255, 0.117); */
+}
+#btn-apple:hover{
+    background-color: rgba(171, 171, 171, 0.200);
+    border: 2px solid gray;
+}
+
+
+@media(max-width: 500px){
+    .section{
+        display: flex;
+        box-shadow: none;
+        align-content: center;
+        justify-content: center;
+    }
+    .sign{
+
+        height: 40px;
+        width: 90%;
+    }
+    
+}
